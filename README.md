@@ -34,7 +34,7 @@ JSX/TSX
 Install with your favourite plugin manager. For vim-plug:
 
 ```viml
-Plug 'cormacrelf/vim-colors-github'
+Plug 'carlweis/vim-colors-github'
 ```
 
 Then set your colorscheme to 'github':
