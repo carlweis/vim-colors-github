@@ -1,10 +1,10 @@
 " vim: set foldmethod=marker foldlevel=1 :
 " {{{ Preamble & vars
 "
-" Author:   Cormac Relf <web@cormacrelf.net>
+" Author:   Carl Weis
 "
-" Note:     Based on github's syntax highlighting theme as of 2018.
-"           Originally based on https://github.com/endel/vim-github-colorscheme,
+" Note:     Based on github's syntax highlighting theme as of 2020.
+"           Originally based on https://github.com/cormacrelf/vim-colors-github, and https://github.com/endel/vim-github-colorscheme,
 "           but none of that code remains.
 "
 " Usage:    colorscheme github
@@ -104,9 +104,9 @@ let s:colors = {} " the 'stable API' you can access through s:Col
 "   visualblue = for visual selections
 "   lightblue  = for folds
 
-let s:lib.numDarkest = { 'gui': '#76787b', 'cterm': 243 }
-let s:lib.numMedium  = { 'gui': '#979797', 'cterm': 246 }
-let s:lib.numLighter = { 'gui': '#babbbc', 'cterm': 250 }
+let s:lib.numDarkest = { 'gui': '#68737e', 'cterm': 243 }
+let s:lib.numMedium  = { 'gui': '#68737e', 'cterm': 246 }
+let s:lib.numLighter = { 'gui': '#68737e', 'cterm': 250 }
 let s:lib.c8d1db     = { 'gui': '#C8D1DB', 'cterm': 252 }
 let s:lib.d7dce1     = { 'gui': '#d7dce1', 'cterm': 253 }
 let s:lib.dde2e7     = { 'gui': '#C8CED6', 'cterm': 254 }
@@ -118,9 +118,9 @@ let s:lib.f1f2f3     = { 'gui': '#f1f2f4', 'cterm': 255 }
 let s:lib.f6f8fa     = { 'gui': '#f6f8fa', 'cterm': 255 } " github inline code block bg
 let s:lib.fafbfc     = { 'gui': '#fafbfc', 'cterm': 255 } " github generic light
 let s:lib.white      = { 'gui': '#ffffff', 'cterm': 231 }
-let s:lib.base0      = { 'gui': '#24292e', 'cterm': 235 } " github text fg
+let s:lib.base0      = { 'gui': '#23292e', 'cterm': 235 } " github text fg
 let s:lib.base05     = { 'gui': '#2b3137', 'cterm': 238 } " lightened from 0
-let s:lib.base05     = { 'gui': '#2d343a', 'cterm': 238 } " lightened from 0
+let s:lib.base05     = { 'gui': '#23292e', 'cterm': 238 } " lightened from 0
 let s:lib.base1      = { 'gui': '#41484f', 'cterm': 238 } " lightened from 0
 let s:lib.base2      = { 'gui': '#6a737d', 'cterm': 243 } " github comment
 let s:lib.base3      = s:lib.numDarkest
@@ -128,7 +128,7 @@ let s:lib.base3      = s:lib.numDarkest
 let s:lib.darktext     = [
       \{ 'gui': '#fafbfc', 'cterm': 255 },
       \{ 'gui': '#d2d4d6', 'cterm': 254 },
-      \{ 'gui': '#abaeb1', 'cterm': 251 },
+      \{ 'gui': '#68737e', 'cterm': 251 },
       \{ 'gui': '#868a8e', 'cterm': 251 },
       \{ 'gui': '#63686c', 'cterm': 251 },
       \{ 'gui': '#42474c', 'cterm': 251 },
@@ -138,13 +138,13 @@ let s:lib.darktext     = [
 " actual colorful colors {{{
 let s:colors.red            = { 'gui': '#d73a49', 'cterm': 167 } " github syntax
 let s:colors.darkred        = { 'gui': '#b31d28', 'cterm': 124 } " github syntax
-let s:colors.purple         = { 'gui': '#6f42c1', 'cterm': 91  } " github syntax
-let s:colors.darkpurple     = { 'gui': '#45267d', 'cterm': 237 } " ^- darkened
+let s:colors.purple         = { 'gui': '#b391f0', 'cterm': 91  } " github syntax
+let s:colors.darkpurple     = { 'gui': '#b391f0', 'cterm': 237 } " ^- darkened
 let s:colors.yellow         = { 'gui': '#ffffc5', 'cterm': 230 } " github search
-let s:colors.green          = { 'gui': '#22863a', 'cterm': 29  } " github syntax (html)
-let s:colors.boldgreen      = { 'gui': '#3ebc5c', 'cterm': 29  } " ^
-let s:colors.orange         = { 'gui': '#e36209', 'cterm': 166 } " github syntax
-let s:colors.boldorange     = { 'gui': '#f18338', 'cterm': 166 } " ^
+let s:colors.green          = { 'gui': '#85e89d', 'cterm': 29  } " github syntax (html)
+let s:colors.boldgreen      = { 'gui': '#85e89d', 'cterm': 29  } " ^
+let s:colors.orange         = { 'gui': '#feab70', 'cterm': 166 } " github syntax
+let s:colors.boldorange     = { 'gui': '#feab70', 'cterm': 166 } " ^
 let s:colors.lightgreen_nr  = { 'gui': '#cdffd8', 'cterm': 85  } " github diff
 let s:colors.lightgreen     = { 'gui': '#e6ffed', 'cterm': 85  } " github diff
 let s:colors.lightred_nr    = { 'gui': '#ffdce0', 'cterm': 167 } " github diff
@@ -155,7 +155,7 @@ let s:colors.difftext       = { 'gui': '#f2e496', 'cterm': 222 } " ^- darkened
 let s:colors.darkblue       = { 'gui': '#032f62', 'cterm': 17  } " ^- darkened
 let s:colors.blue           = { 'gui': '#005cc5', 'cterm': 26  } " github syntax
 let s:colors.blue0          = { 'gui': '#669cc2', 'cterm': 153 }
-let s:colors.blue1          = { 'gui': '#c1daec', 'cterm': 153 }
+let s:colors.blue1          = { 'gui': '#87baef', 'cterm': 153 }
 let s:colors.blue2          = { 'gui': '#e4effb', 'cterm': 153 }
 let s:colors.blue3          = { 'gui': '#bde0fb', 'cterm': 153 }
 let s:colors.blue4          = { 'gui': '#f1f8ff', 'cterm': 153 } " github diff folds
@@ -165,8 +165,8 @@ let s:darklib = {}
 let s:darklib.blues = ['#5295d4', '#4c81b5', '#456e98', '#3d5c7b', '#354a60', '#2d3846', '#23282d']
 
 let s:dcolors = {}
-let s:dcolors.red            = { 'gui': '#f16636', 'cterm': 167 }
-let s:dcolors.blue           = { 'gui': '#4dacfd', 'cterm': 167 }
+let s:dcolors.red            = { 'gui': '#fb6a80', 'cterm': 167 }
+let s:dcolors.blue           = { 'gui': '#67b6ff', 'cterm': 167 }
 let s:dcolors.purple         = { 'gui': '#a280e2', 'cterm': 91  }
 let s:dcolors.purple         = { 'gui': '#a887e6', 'cterm': 91  }
 let s:dcolors.darkpurple     = { 'gui': '#8b71c1', 'cterm': 91  }
@@ -176,10 +176,10 @@ let s:dcolors.blue0          = { 'gui': s:darklib.blues[2], 'cterm': 153 }
 let s:dcolors.blue1          = { 'gui': s:darklib.blues[5], 'cterm': 153 }
 let s:dcolors.blue2          = { 'gui': s:darklib.blues[4], 'cterm': 153 }
 let s:dcolors.blue3          = { 'gui': s:darklib.blues[5], 'cterm': 153 }
-let s:dcolors.lightorange    = { 'gui': '#49443e', 'cterm': 150 }
+let s:dcolors.lightorange    = { 'gui': '#41484f', 'cterm': 150 }
 let s:dcolors.difftext       = { 'gui': '#87663b', 'cterm': 150 }
 let s:dcolors.lightorange_nr = { 'gui': '#6f6456', 'cterm': 150 }
-let s:dcolors.lightgreen_nr  = { 'gui': '#5d8c6f', 'cterm': 85  } " github diff
+let s:dcolors.lightgreen_nr  = { 'gui': '#59b36f', 'cterm': 85  } " github diff
 let s:dcolors.lightgreen     = { 'gui': '#374843', 'cterm': 85  } " github diff
 let s:dcolors.lightred_nr    = { 'gui': '#8b6c73', 'cterm': 167 } " github diff
 let s:dcolors.lightred       = { 'gui': '#443e44', 'cterm': 167 } " github diff
